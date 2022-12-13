@@ -1,0 +1,19 @@
+html,body,#app{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  min-width: 1366px;
+}
+.el-breadcrumb{
+  font-size: 18px;
+}
+.el-card{
+  margin-top: 15px;
+}
+.el-table{
+  margin-top: 15px;
+  font-size: 15px;
+}
+.el-pagination{
+  margin-top: 15px;
+}
