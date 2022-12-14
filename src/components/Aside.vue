@@ -53,7 +53,6 @@ export default {
    async getMenuList() {
     const {data:res} = await this.$http.get('menus');
     this.menuList = res.data;
-    console.log(res.data);
     if(res.meta.status!==200)return this.$message.error(res.meta.msg);
     },
     saveActiveState(val){

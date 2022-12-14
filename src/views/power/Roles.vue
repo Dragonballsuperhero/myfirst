@@ -173,7 +173,6 @@ export default {
         this.notification(res,'编辑角色失败','编辑角色成功',200);
         this.getRolesList();
         this.editDialogVisible = false;
-        console.log(res);
       });
     },
       // 删除用户信息
