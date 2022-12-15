@@ -20,3 +20,6 @@ html,body,#app{
 .el-cascader-panel{
   height: 300px !important
 }
+.button-new-tag{
+  width: 100px;
+}
