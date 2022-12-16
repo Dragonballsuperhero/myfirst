@@ -23,3 +23,12 @@ html,body,#app{
 .button-new-tag{
   width: 100px;
 }
+.el-steps{
+  margin: 15px 0;
+}
+.el-step__title{
+  font-size: 13px;
+}
+.quill-editor{
+  height: 300px;
+}

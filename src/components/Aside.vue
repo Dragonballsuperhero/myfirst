@@ -78,7 +78,7 @@ export default {
   border-right: 0;
 }
 .toggle_btn{
-  background-color: rgb(159, 207, 204);
+  background-color: rgb(112, 112, 112);
   text-align: center;
   line-height: 20px;
   font-size: 10px;

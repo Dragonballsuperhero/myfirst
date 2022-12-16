@@ -232,7 +232,7 @@ export default {
           this.onlyData = res.data;
           this.title_name = '静态属性';
       }
-       // 循环出数组的attr_vals属性用空格进行分割
+       // 循环出数组的attr_vals属性用,进行分割
        res.data.forEach(item=>{
             item.attr_vals = item.attr_vals? item.attr_vals.split(","):[];
           //添加自定义属性用来控制输入框和按钮之间的切换

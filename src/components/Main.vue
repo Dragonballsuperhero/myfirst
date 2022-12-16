@@ -12,6 +12,6 @@ export default {
 
 <style lang="less" scoped>
 .el-main{
-  background-color: antiquewhite;
+  background-color: aliceblue;
 }
 </style>
