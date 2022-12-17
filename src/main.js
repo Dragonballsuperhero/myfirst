@@ -7,21 +7,26 @@ import axios from 'axios'
 import notification from './assets/js/notification'
 import TreeTable from 'vue-table-with-tree-grid'
 import VueQuillEditor from 'vue-quill-editor'
+import 'quill/dist/quill.core.css' 
+import 'quill/dist/quill.snow.css'
+import 'quill/dist/quill.bubble.css'
+import NProgress from 'nprogress'
+import 'nprogress/nprogress.css'
 
 Vue.prototype.notification = notification; //将notification挂载到原型对象里
 axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'
+
 axios.interceptors.request.use(config=>{
+    NProgress.start();
   config.headers.Authorization = sessionStorage.getItem('token');
   return config;
 })
-
-
-import 'quill/dist/quill.core.css' 
-import 'quill/dist/quill.snow.css'
-import 'quill/dist/quill.bubble.css' 
+axios.interceptors.response.use(config=>{
+  NProgress.done();
+  return config;
+})
 
 Vue.use(VueQuillEditor)
-
 
 Vue.prototype.$http  = axios;
 
