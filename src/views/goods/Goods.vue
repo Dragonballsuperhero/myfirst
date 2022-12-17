@@ -9,7 +9,7 @@
       <!-- 卡片区域 -->
       <el-card>
         <!-- 搜索框和按钮 -->
-        <el-input placeholder="请输入内容" v-model="goodsListParam.query" @clear="getGoodsList" clearable class="input-with-select">
+        <el-input placeholder="请输入内容" v-model="goodsListParam.query" @clear="getGoodsList" clearable>
         <el-button slot="append" icon="el-icon-search" @click="getGoodsList"></el-button>
        </el-input>
        <!-- 添加按钮 -->
