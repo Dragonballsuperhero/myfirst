@@ -35,10 +35,10 @@ const router = new VueRouter({
 })
 // 路由导航守卫
 router.beforeEach((to,from,next)=>{
-  if(to.path==='/login')next();
+  if(to.path==='/login')return next();
     const token =  sessionStorage.getItem('token');
     if(!token)next('/login')
-    next();
+      return next();
 })
 
 export default router
